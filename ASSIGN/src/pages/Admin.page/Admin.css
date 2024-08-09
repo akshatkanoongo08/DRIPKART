@@ -1,0 +1,250 @@
+/* General Admin Page Layout */
+.admin-page {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  flex-direction: row; /* Side-by-side layout */
+}
+
+.sidebar {
+  width: 250px; /* Width of the sidebar */
+  position: fixed; /* Keep the sidebar in place */
+  top: 0; /* Align with the top of the page */
+  bottom: 0; /* Extend to bottom of the viewport */
+  background-color: #f4f4f4; /* Sidebar background color */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  padding-top: 64px; /* Adjust to align with the navbar height */
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px; /* Adjust to match the sidebar width */
+  padding: 20px;
+  background-color: #fff; /* Background color for content area */
+}
+
+/* Add Restaurant */
+.add-restaurant {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-restaurant h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Show Products */
+.show-productss {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.show-productss h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.show-productss table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.show-productss th, .show-productss td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.show-productss th {
+  background-color: #4ca1af;
+  color: white;
+}
+
+.show-productss tr:hover {
+  background-color: #f1f1f1;
+}
+
+.show-productss img {
+  border-radius: 5px;
+}
+
+.show-productss .btn {
+  margin-top: 10px;
+}
+
+.show-productss .btn button {
+  background-color: #4ca1af;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.show-productss .btn button:hover {
+  background-color: #3b8a8a;
+}
+
+.show-productss .btn i {
+  margin-right: 5px;
+}
+
+/* Update Product */
+.update-product {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-product h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #4ca1af;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #357a91;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button i {
+  color: black;
+  font-size: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%; /* Full width on smaller screens */
+      position: relative; /* Allow the sidebar to flow with the content */
+      margin-bottom: 20px; /* Space below the sidebar */
+  }
+
+  .content {
+      margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .show-productss table, .show-productss th, .show-productss td {
+      display: block;
+      width: 100%;
+  }
+
+  .show-productss th, .show-productss td {
+      text-align: right;
+      padding: 10px;
+  }
+
+  .show-productss th::after {
+      content: ":";
+      padding-left: 10px;
+  }
+
+  .show-productss tr {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+  }
+
+  .show-productss tr:last-child {
+      border-bottom: none;
+  }
+
+  .show-productss .btn {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .show-productss .btn button {
+      margin-bottom: 5px;
+  }
+}

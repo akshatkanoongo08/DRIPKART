@@ -1,0 +1,16 @@
+{
+    "slides": [
+      {
+        "src": "https://blog.carts.guru/hubfs/Launch%20a%20New%20Product.png",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "https://media.istockphoto.com/id/1405760376/vector/online-shopping-design-graphic-elements-signs-symbols-mobile-marketing-and-digital-marketing.jpg?s=612x612&w=0&k=20&c=2DSpkY9ktsAfzBOcZUMkZThW3B6kvGYG1cHQ3yeaPJg=",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "https://img.freepik.com/premium-vector/modern-instagram-carousel-post-template-editable-instagram-carousel-post-fashion-sale_595212-279.jpg",
+        "alt": "Image 3 for carousel"
+      }
+    ]
+  }

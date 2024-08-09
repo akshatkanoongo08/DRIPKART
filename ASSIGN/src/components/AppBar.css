@@ -1,0 +1,121 @@
+
+  
+
+.navbar {
+    background-color: #ff7f50; 
+    padding: 0.5rem 1rem; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.navbar-brand {
+    color: #fff; 
+    font-weight: bold;
+    font-size: 1.75rem; 
+    text-transform: uppercase; 
+}
+
+.navbar-toggler {
+    border-color: #fff;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url('path/to/toggler-icon.svg'); 
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 0.5rem; 
+}
+
+.nav-link:hover {
+    color: #000 !important;
+    text-decoration: underline; 
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex: 1; 
+}
+
+.form-control {
+    border-radius: 0.25rem; 
+    border: 1px solid #ddd; 
+    box-shadow: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    margin-right: 0.5rem; 
+    flex: 1; 
+}
+
+.btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+    border-radius: 0.25rem; 
+    transition: all 0.3s ease; 
+    white-space: nowrap; 
+}
+
+.btn-outline-success:hover {
+    color: #ff7f50;
+    background-color: #fff;
+    border-color: #ff7f50; 
+}
+
+.fa-user {
+    color: #fff;
+    font-size: 1.75rem; 
+}
+
+.nav-dropdown-menu {
+    max-width: 250px; 
+    border-radius: 0.25rem; 
+}
+
+.nav-dropdown-item {
+    color: #000;
+}
+
+.nav-dropdown-item:hover {
+    background-color: #ff7f50;
+    color: #fff;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -85px;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #ff7f50;
+        padding: 1rem;
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .nav-link {
+        margin: 0.5rem 0; 
+    }
+}
+
+
+.navbar .search-container {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    justify-content: center; 
+}
+
+.navbar .search-container .form-control {
+    margin-right: 0; 
+}
+
+.navbar .search-container .btn-outline-success {
+    margin-left: 0.5rem; 
+}
